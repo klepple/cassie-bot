@@ -18,6 +18,18 @@ const commands = {
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    // Neomu server - message v0.1
+    client.channels.fetch('331243505361879042').then(channel => {
+        channel.send(`Hello <@everyone>!👋 My name is Cassie (short for Cassiopeia) and the stars whisper their secrets to me every night 🌠🙏🌟. It's nice to meet all of you~`)
+        channel.send(`I respond to commands begining with ~. Please use ~help anytime and I'll let you know about my abilities 🔮👁️🪄!`)
+        channel.send(`Also I love saying hi!! If you ever want to reach out, "Hi Cassie" should do the trick 😊.`)
+    });
+    // Test server - message v0.1
+    client.channels.fetch('795359168864321569').then(channel => {
+        channel.send(`Hello <@everyone>!👋 My name is Cassie (short for Cassiopeia) and the stars whisper their secrets to me every night 🌠🙏🌟. It's nice to meet all of you~`)
+        channel.send(`I respond to commands begining with ~. Please use ~help anytime and I'll let you know about my abilities 🔮👁️🪄!`)
+        channel.send(`Also I love saying hi!! If you ever want to reach out, "Hi Cassie" should do the trick 😊.`)
+    });
 });
 
 client.on('message', msg => {
