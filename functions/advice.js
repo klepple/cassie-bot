@@ -51,7 +51,12 @@ negative_vibes = [
     "being a pain lately",
     "Kahlia's dad right now",
     "dealing with a lot of existential dread",
-    "like a craft glue stick that's all dried up",  
+    "like a craft glue stick that's all dried up",
+    "soggy",
+    "acting sus lately",
+    "stretched thinly and reaching a breaking point",
+    "laggy",
+    "acting fragmented and scatterbrained"
 ]
 
 positive_vibes = [
@@ -84,6 +89,10 @@ positive_vibes = [
     "you remind the stars of the fresh smell after a spring shower - they can't get enough of you",
     "keep an eye out for crunchy leaves. If you see one, you should step on it",
     "things will get better soon",
+    "you will be carried gently by the winds of the future",
+    "your future looks super chill",
+    "you're so unique! No one does it quite like you :)",
+    "the stars keep whispering excitedly about your future"
 ]
 
 advices = [
@@ -121,7 +130,24 @@ advices = [
     "not eat yellow snow",
     "not go to 1154 Fairview Lane",
     "seek professional assistance",
-    "be patient and the rewards will come"
+    "be patient and the rewards will come",
+    "remove the fruitfly from your nose",
+    "become a warlock",
+    "uninstall league",
+    "remember the inevitable heat death of the universe and the transcendentality of it all",
+    "go for a quick walk",
+    "go feel some wet grass on your bare feet",
+    "google some cute pet pictures",
+    "not abandon Jerome",
+    "congratulate your friendly neighbourhood star bot on a job well done ;)",
+    "steal the decleration of independance",
+    "liberate Jerome",
+    "shoot the bad guys",
+    "grab some socks",
+    "stop thinking you can solve your problems alone and ask someone for help",
+    "stop worrying your friends/family secretly hate you, you're not an imposter... unless you are one",
+    "go for the style points",
+    "eat the cookie"
 ]
 
 star_emotions = [
