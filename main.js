@@ -1,7 +1,7 @@
 // Main bot function
 const advice = require('./functions/advice');
-const mood = require('./functions/mood');
-const stars = require('./functions/stars');
+// const mood = require('./functions/mood');
+// const stars = require('./functions/stars');
 const tod = require('./tod');
 
 const Discord = require('discord.js');
