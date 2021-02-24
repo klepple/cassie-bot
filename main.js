@@ -1,5 +1,6 @@
 // Main bot function
 const advice = require('./functions/advice');
+const help = require('./functions/help')
 // const mood = require('./functions/mood');
 // const stars = require('./functions/stars');
 const tod = require('./tod');
@@ -12,6 +13,7 @@ const prefix = "~";
 
 const commands = {
     'advice': advice.give_advice,
+    'help': help.list_commands,
     // 'stars': mood
     // 'mood': stars
 }
@@ -21,15 +23,15 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if(msg.content.toLowerCase().includes("hi cassie")) {
+    if(msg.content.toLowerCase().includes("hi cassie") && msg.author.id != "786776537524863006") {
         current_tod = tod.current_tod(date.getHours())
         msg.channel.send(`Hi <@${msg.author.id}>! ^_^ Hope you're doing well ${current_tod}.`)
     };
 
     if(!msg.content.startsWith(prefix)) return;
 
-    if(message.author.id === "199966957238353920"){
-        if(message.content.startsWith(`${prefix}introduceyourself`)){
+    if(msg.author.id === "199966957238353920"){
+        if(msg.content.startsWith(`${prefix}introduceyourself`)){
             msg.channel.send("Hello @everyone!👋 My name is Cassie (short for Cassiopeia) and the stars whisper their secrets to me every night 🌠🙏🌟. It's nice to meet all of you~ \n I respond to commands begining with ~. Please use ~help anytime and I'll let you know about my abilities 🔮👁️🪄! \n Also I love saying hi!! If you ever want to reach out, 'Hi Cassie' should do the trick 😊.");
         };
     };
@@ -39,7 +41,9 @@ client.on('message', msg => {
     if(Object.keys(commands).includes(command)){
         commands[command](msg);
     }else{
-        console.log("Invalid command: " + command);
+        if(command != "introduceyourself"){
+            msg.channel.send("Sorry, I don't understand what " + command + " means... 😞");
+        }
     }
 });
 
