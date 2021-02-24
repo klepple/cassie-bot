@@ -29,6 +29,7 @@ client.on('message', msg => {
     };
 
     if(!msg.content.startsWith(prefix)) return;
+    if(msg.content.substring(1).startsWith(prefix)) return;
 
     if(msg.author.id === "199966957238353920"){
         if(msg.content.startsWith(`${prefix}introduceyourself`)){
