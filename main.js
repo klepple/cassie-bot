@@ -1,8 +1,8 @@
 // Main bot function
 const advice = require('./functions/advice');
 const help = require('./functions/help')
+const stars = require('./functions/stars');
 // const mood = require('./functions/mood');
-// const stars = require('./functions/stars');
 const tod = require('./tod');
 
 const Discord = require('discord.js');
@@ -14,7 +14,7 @@ const prefix = "~";
 const commands = {
     'advice': advice.give_advice,
     'help': help.list_commands,
-    // 'stars': mood
+    'stars': stars.get_star_rating,
     // 'mood': stars
 }
 
@@ -30,8 +30,8 @@ client.on('message', msg => {
 
     if(!msg.content.startsWith(prefix)) return;
     if(msg.content.substring(1).startsWith(prefix)) return;
-
-    if(msg.author.id === "199966957238353920"){
+    
+    if(msg.author.id === process.env.USER_ID){
         if(msg.content.startsWith(`${prefix}introduceyourself`)){
             msg.channel.send("Hello @everyone!👋 My name is Cassie (short for Cassiopeia) and the stars whisper their secrets to me every night 🌠🙏🌟. It's nice to meet all of you~ \n I respond to commands begining with ~. Please use ~help anytime and I'll let you know about my abilities 🔮👁️🪄! \n Also I love saying hi!! If you ever want to reach out, 'Hi Cassie' should do the trick 😊.");
         };
