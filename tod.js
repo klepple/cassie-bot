@@ -1,5 +1,6 @@
 module.exports = {
     upcoming_tod: function(hour) {
+        console.log(hour)
         if (hour >= 0 && hour <= 3) {
             return "this late night/early morning"
         } else if (hour >= 4 && hour <= 7) {
