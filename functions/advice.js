@@ -140,7 +140,7 @@ advices = [
     "google some cute pet pictures",
     "not abandon Jerome",
     "congratulate your friendly neighbourhood star bot on a job well done ;)",
-    "steal the decleration of independance",
+    "steal the decleration of independence",
     "liberate Jerome",
     "shoot the bad guys",
     "grab some socks",
